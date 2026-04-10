@@ -1,0 +1,7 @@
+# Cloudflare Pages — deploy from repo root:
+#   npx wrangler pages deploy . --project-name=jakobtfaber-com
+# Or link the Git repo in the Cloudflare dashboard to this directory.
+
+name = "jakobtfaber-com"
+compatibility_date = "2024-12-01"
+pages_build_output_dir = "."

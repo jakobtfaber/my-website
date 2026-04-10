@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jakob T. Faber — personal site: work, research, and contact."
+    />
+    <title>Jakob T. Faber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="/">J.T.F.</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Toggle light and dark theme"
+          data-theme-toggle
+        >
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Personal site</p>
+          <h1 class="hero__title">
+            <span class="hero__name">Jakob T. Faber</span>
+          </h1>
+          <p class="hero__lede">
+            Building a corner of the web for research, projects, and ideas —
+            clear, considered, and slowly growing.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" href="#work">Explore work</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about">
+        <div class="section__inner">
+          <h2 class="section__heading">About</h2>
+          <div class="prose">
+            <p>
+              Hello — I’m Jakob. This is my personal space on the internet: a
+              place to share what I’m working on, what I’m curious about, and
+              how to reach me.
+            </p>
+            <p>
+              The site is intentionally minimal while I shape the content. New
+              writing, projects, and updates will land here over time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section--work">
+        <div class="section__inner">
+          <h2 class="section__heading">Selected focus</h2>
+          <p class="section__sub">
+            Placeholders you can replace with real projects or publications.
+          </p>
+          <ul class="card-grid">
+            <li class="card">
+              <h3 class="card__title">Research</h3>
+              <p class="card__body">
+                Summaries, papers, and tools — coming soon as I migrate
+                material from other channels.
+              </p>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Software &amp; tools</h3>
+              <p class="card__body">
+                Small utilities and experiments. Links and repos will appear
+                here when they’re ready to share.
+              </p>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Writing</h3>
+              <p class="card__body">
+                Longer notes and essays when there’s something worth saying
+                slowly and carefully.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="section__inner section__inner--narrow">
+          <h2 class="section__heading">Contact</h2>
+          <p class="prose">
+            For collaborations, questions, or a friendly note, reach out at
+            <a class="inline-link" href="mailto:hello@jakobtfaber.com"
+              >hello@jakobtfaber.com</a
+            >
+            — or replace this with the address you prefer to publish.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer__copy">
+          © <span data-year></span> Jakob T. Faber. Hosted on Cloudflare Pages.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
