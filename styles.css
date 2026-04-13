@@ -209,8 +209,8 @@ body {
 /* ── Headshot ────────────────────────────────────────────────────── */
 
 .headshot {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--border);
@@ -691,8 +691,8 @@ body {
   }
 
   .headshot {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   .talks-table th:nth-child(4),
