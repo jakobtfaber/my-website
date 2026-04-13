@@ -550,6 +550,10 @@ body {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .card-grid--2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
