@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Jakob T. Faber — personal site: work, research, and contact."
+      content="Jakob T. Faber — astrophysics researcher. Publications, CV, talks, and software."
     />
+    <meta property="og:title" content="Jakob T. Faber" />
+    <meta
+      property="og:description"
+      content="Astrophysics researcher — publications, CV, talks, and software."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jakobtfaber.com" />
     <title>Jakob T. Faber</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
@@ -23,7 +30,11 @@
         <a class="logo" href="/">J.T.F.</a>
         <nav class="nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#work">Work</a>
+          <a href="#publications">Publications</a>
+          <a href="#cv">CV</a>
+          <a href="#talks">Talks</a>
+          <a href="#software">Software</a>
+          <a href="#news">News</a>
           <a href="#contact">Contact</a>
         </nav>
         <button
@@ -38,73 +49,249 @@
     </header>
 
     <main id="main">
+      <!-- ── Hero ────────────────────────────────────────── -->
       <section class="hero">
         <div class="hero__grid" aria-hidden="true"></div>
-        <div class="hero__content">
-          <p class="eyebrow">Personal site</p>
-          <h1 class="hero__title">
-            <span class="hero__name">Jakob T. Faber</span>
-          </h1>
-          <p class="hero__lede">
-            Building a corner of the web for research, projects, and ideas —
-            clear, considered, and slowly growing.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">Get in touch</a>
-            <a class="btn btn--ghost" href="#work">Explore work</a>
+        <div class="hero__content hero__content--academic">
+          <img
+            class="headshot"
+            src="/headshot.jpeg"
+            alt="Photo of Jakob T. Faber"
+            width="160"
+            height="160"
+          />
+          <div class="hero__text">
+            <p class="eyebrow">Astrophysicist</p>
+            <h1 class="hero__title">
+              <span class="hero__name">Jakob T. Faber</span>
+            </h1>
+            <p class="hero__lede">
+              Studying fast radio bursts, radio transients, and signal
+              processing — building tools for discovery in time-domain
+              astrophysics.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#publications">Publications</a>
+              <a class="btn btn--ghost" href="#cv">Curriculum Vitae</a>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- ── About ───────────────────────────────────────── -->
       <section id="about" class="section section--about">
         <div class="section__inner">
           <h2 class="section__heading">About</h2>
           <div class="prose">
             <p>
-              Hello — I’m Jakob. This is my personal space on the internet: a
-              place to share what I’m working on, what I’m curious about, and
-              how to reach me.
+              I am a PhD student in astrophysics with interests in fast radio
+              bursts (FRBs), radio transient detection, and digital signal
+              processing. My work spans observational campaigns, data pipeline
+              development, and statistical methods for characterizing transient
+              phenomena.
             </p>
             <p>
-              The site is intentionally minimal while I shape the content. New
-              writing, projects, and updates will land here over time.
+              This site collects my publications, talks, software, and contact
+              information in one place. Content here is updated as new work
+              ships.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="work" class="section section--work">
+      <!-- ── Publications ────────────────────────────────── -->
+      <section id="publications" class="section section--pubs">
         <div class="section__inner">
-          <h2 class="section__heading">Selected focus</h2>
+          <h2 class="section__heading">Publications</h2>
           <p class="section__sub">
-            Placeholders you can replace with real projects or publications.
+            Auto-fetched from
+            <a
+              class="inline-link"
+              href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0001-9855-5781&sort=date+desc"
+              >NASA ADS</a
+            >
+            via ORCID
+            <a
+              class="inline-link"
+              href="https://orcid.org/0000-0001-9855-5781"
+              >0000-0001-9855-5781</a
+            >.
+          </p>
+          <div id="pub-list" class="pub-list" aria-live="polite">
+            <p class="pub-list__loading">Loading publications&hellip;</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CV ──────────────────────────────────────────── -->
+      <section id="cv" class="section section--cv">
+        <div class="section__inner section__inner--narrow">
+          <h2 class="section__heading">
+            Curriculum Vitae
+            <a class="btn btn--small btn--ghost" href="/cv.pdf" download
+              >Download PDF</a
+            >
+          </h2>
+
+          <div class="cv-block">
+            <h3 class="cv-block__title">Education</h3>
+            <ul class="cv-list">
+              <li>
+                <span class="cv-list__main"
+                  >Ph.D. Astrophysics — California Institute of
+                  Technology</span
+                >
+                <span class="cv-list__aside">(in progress)</span>
+              </li>
+              <li>
+                <span class="cv-list__main"
+                  >B.A. Astrophysics — University of California,
+                  Berkeley</span
+                >
+                <span class="cv-list__aside">2020</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-block__title">Research positions</h3>
+            <ul class="cv-list">
+              <li>
+                <span class="cv-list__main"
+                  >Graduate Research Assistant — Caltech</span
+                >
+                <span class="cv-list__aside">2020 – present</span>
+              </li>
+              <li>
+                <span class="cv-list__main"
+                  >Undergraduate Researcher — UC Berkeley Astronomy</span
+                >
+                <span class="cv-list__aside">2018 – 2020</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-block__title">Selected honors</h3>
+            <ul class="cv-list cv-list--plain">
+              <li>Placeholder award or fellowship — replace with real entry</li>
+              <li>Another placeholder honor</li>
+            </ul>
+          </div>
+
+          <p class="prose" style="margin-top: 2rem">
+            Full details in the
+            <a class="inline-link" href="/cv.pdf" download>PDF version</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── Talks ───────────────────────────────────────── -->
+      <section id="talks" class="section section--talks">
+        <div class="section__inner">
+          <h2 class="section__heading">Talks &amp; Presentations</h2>
+          <table class="talks-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Venue</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Placeholder talk title</td>
+                <td>Conference or seminar name</td>
+                <td>2025</td>
+                <td><a class="inline-link" href="#">Slides</a></td>
+              </tr>
+              <tr>
+                <td>Another placeholder talk</td>
+                <td>Workshop or colloquium</td>
+                <td>2024</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── Software ────────────────────────────────────── -->
+      <section id="software" class="section section--software">
+        <div class="section__inner">
+          <h2 class="section__heading">Software</h2>
+          <p class="section__sub">
+            Open-source tools and libraries. Replace these cards with real
+            repos.
           </p>
           <ul class="card-grid">
             <li class="card">
-              <h3 class="card__title">Research</h3>
+              <h3 class="card__title">
+                <a
+                  class="card__link"
+                  href="https://github.com/jakobtfaber"
+                  >repo-name</a
+                >
+              </h3>
               <p class="card__body">
-                Summaries, papers, and tools — coming soon as I migrate
-                material from other channels.
+                One-line description of the repository and what it does.
               </p>
+              <span class="card__badge">Python</span>
             </li>
             <li class="card">
-              <h3 class="card__title">Software &amp; tools</h3>
+              <h3 class="card__title">
+                <a
+                  class="card__link"
+                  href="https://github.com/jakobtfaber"
+                  >another-repo</a
+                >
+              </h3>
               <p class="card__body">
-                Small utilities and experiments. Links and repos will appear
-                here when they’re ready to share.
+                Short description of the tool or library.
               </p>
+              <span class="card__badge">Python</span>
             </li>
             <li class="card">
-              <h3 class="card__title">Writing</h3>
+              <h3 class="card__title">
+                <a
+                  class="card__link"
+                  href="https://github.com/jakobtfaber"
+                  >third-repo</a
+                >
+              </h3>
               <p class="card__body">
-                Longer notes and essays when there’s something worth saying
-                slowly and carefully.
+                Another placeholder for a public software project.
               </p>
+              <span class="card__badge">C</span>
             </li>
           </ul>
         </div>
       </section>
 
+      <!-- ── News ────────────────────────────────────────── -->
+      <section id="news" class="section section--news">
+        <div class="section__inner section__inner--narrow">
+          <h2 class="section__heading">News</h2>
+          <dl class="news-feed">
+            <div class="news-feed__item">
+              <dt class="news-feed__date">2025-XX</dt>
+              <dd class="news-feed__text">
+                Placeholder — replace with a real news item (paper accepted,
+                talk given, award, etc.).
+              </dd>
+            </div>
+            <div class="news-feed__item">
+              <dt class="news-feed__date">2024-XX</dt>
+              <dd class="news-feed__text">
+                Another placeholder news entry.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ── Contact ─────────────────────────────────────── -->
       <section id="contact" class="section section--contact">
         <div class="section__inner section__inner--narrow">
           <h2 class="section__heading">Contact</h2>
@@ -121,8 +308,31 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
+        <nav class="footer-links" aria-label="External profiles">
+          <a
+            class="footer-links__item"
+            href="https://orcid.org/0000-0001-9855-5781"
+            >ORCID</a
+          >
+          <a
+            class="footer-links__item"
+            href="https://scholar.google.com/citations?user=REPLACE_ME"
+            >Google Scholar</a
+          >
+          <a
+            class="footer-links__item"
+            href="https://github.com/jakobtfaber"
+            >GitHub</a
+          >
+          <a
+            class="footer-links__item"
+            href="mailto:hello@jakobtfaber.com"
+            >Email</a
+          >
+        </nav>
         <p class="footer__copy">
-          © <span data-year></span> Jakob T. Faber. Hosted on Cloudflare Pages.
+          &copy; <span data-year></span> Jakob T. Faber. Hosted on Cloudflare
+          Pages.
         </p>
       </div>
     </footer>
