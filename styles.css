@@ -217,12 +217,12 @@ body {
 .headshot-wrapper::before {
   content: "";
   position: absolute;
-  inset: -60%;
+  inset: -100%;
   background: url("/backdrop.jpg") center / cover no-repeat;
   opacity: 0.45;
   border-radius: 50%;
-  mask-image: radial-gradient(circle, black 40%, transparent 90%);
-  -webkit-mask-image: radial-gradient(circle, black 40%, transparent 90%);
+  mask-image: radial-gradient(circle, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle, black 30%, transparent 70%);
   pointer-events: none;
 }
 
