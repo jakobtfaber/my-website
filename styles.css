@@ -217,7 +217,7 @@ body {
 .headshot-wrapper::before {
   content: "";
   position: absolute;
-  inset: -150%;
+  inset: -120%;
   background: url("/backdrop.svg") center / cover no-repeat;
   opacity: 0.45;
   mask-image: radial-gradient(circle, black 32%, transparent 72%);
