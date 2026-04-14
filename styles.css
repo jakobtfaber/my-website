@@ -214,10 +214,9 @@ body {
   height: 300px;
 }
 
-.headshot-wrapper::before {
-  content: "";
+.hero__backdrop {
   position: absolute;
-  inset: -120%;
+  inset: 0;
   background: url("/backdrop.svg") center / cover no-repeat;
   opacity: 0.45;
   mask-image: radial-gradient(circle, black 40%, transparent 80%);
@@ -225,7 +224,7 @@ body {
   pointer-events: none;
 }
 
-[data-theme="dark"] .headshot-wrapper::before {
+[data-theme="dark"] .hero__backdrop {
   opacity: 0.35;
 }
 
