@@ -218,7 +218,7 @@ body {
   content: "";
   position: absolute;
   inset: -100%;
-  background: url("/backdrop.jpg") center / cover no-repeat;
+  background: url("/backdrop.svg") center / cover no-repeat;
   opacity: 0.45;
   border-radius: 50%;
   mask-image: radial-gradient(circle, black 30%, transparent 70%);
