@@ -220,8 +220,8 @@ body {
   inset: -120%;
   background: url("/backdrop.svg") center / cover no-repeat;
   opacity: 0.45;
-  mask-image: radial-gradient(circle, black 32%, transparent 72%);
-  -webkit-mask-image: radial-gradient(circle, black 32%, transparent 72%);
+  mask-image: radial-gradient(circle, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle, black 40%, transparent 80%);
   pointer-events: none;
 }
 
