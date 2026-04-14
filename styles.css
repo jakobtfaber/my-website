@@ -217,7 +217,7 @@ body {
 .headshot-wrapper::before {
   content: "";
   position: absolute;
-  inset: -100%;
+  inset: -150%;
   background: url("/backdrop.svg") center / cover no-repeat;
   opacity: 0.45;
   border-radius: 50%;
